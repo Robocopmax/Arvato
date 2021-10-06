@@ -1,16 +1,31 @@
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Aufgabe1 {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        //TODO: 
     }
     //Übergebe Dateipfade
     //Verifiziere Dateipfade
     //Verifiziere Dateiinhalt
     
-    public void readList(String filepath){
+    public String[] readList(String filepath){
+        String[] out;
         //Reads an file from filepath and transfers its contents into an array line for line
+        try {
+            Scanner sc = new Scanner(new File(filepath));
+            ArrayList<String> workCopy = new ArrayList<String>();
+            while(sc.hasNextLine()){
+                workCopy.add(sc.nextLine().trim());
+            }
+            workCopy.trimToSize();
+            out = new String[workCopy.size()];
+            
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
     }
     
     public void core(String[] liste1, String[] liste2) throws Exception{
