@@ -12,7 +12,7 @@ public class Aufgabe1 {
     //Verifiziere Dateiinhalt
     
     public String[] readList(String filepath){
-        String[] out;
+        String[] out = new String[0];
         //Reads an file from filepath and transfers its contents into an array line for line
         try {
             Scanner sc = new Scanner(new File(filepath));
@@ -22,10 +22,11 @@ public class Aufgabe1 {
             }
             workCopy.trimToSize();
             out = new String[workCopy.size()];
-            
+            out =(String[])workCopy.toArray();
         } catch (Exception e) {
             //TODO: handle exception
         }
+        return out;
     }
     
     public void core(String[] liste1, String[] liste2) throws Exception{

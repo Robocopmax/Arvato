@@ -3,7 +3,7 @@ package de.arvato.application;
 import java.util.Objects;
 
 public class Flear {
-    
+    //Note: shouldn't it be "Flea" and not "Flear"
     String name;
     float price;
     int rating;
