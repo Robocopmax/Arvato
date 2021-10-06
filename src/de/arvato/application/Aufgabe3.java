@@ -8,22 +8,20 @@ public class Aufgabe3 {
     static int bestRes;
     static float bestPrice;
     
-    public static void main(String[] args) throws Exception {
-          
-    }
+    
 
     public static int getOptimalValue(float money, List<Flear> flears){
         int res = 0;
         bestRes = 0;
         bestPrice = money;
         ArrayList<Flear> bestBuy = recursiveHelpFunction(money,flears, new ArrayList<Flear>());
-
+        //TODO: Print out List of Fleas
         res = bestRes;
         return res;
     }
 
     //Help function to brute-force Solution via recursive depth search
-    public static ArrayList<Flear> recursiveHelpFunction(float money, List<Flear> flears, ArrayList<Flear> boughtFleas){
+    private static ArrayList<Flear> recursiveHelpFunction(float money, List<Flear> flears, ArrayList<Flear> boughtFleas){
         ArrayList<Flear> re = null;
         boolean canCram = false;
         for(Flear a : flears){
