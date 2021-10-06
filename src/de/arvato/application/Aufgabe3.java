@@ -15,7 +15,7 @@ public class Aufgabe3 {
         bestRes = 0;
         bestPrice = money;
         ArrayList<Flear> bestBuy = recursiveHelpFunction(money,flears, new ArrayList<Flear>());
-        //TODO: Print out List of Fleas
+        //TODO: Print out List of Fleas for test purposes
         res = bestRes;
         return res;
     }

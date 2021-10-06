@@ -30,7 +30,7 @@ public class Aufgabe1 {
     }
     
     public void core(String[] liste1, String[] liste2) throws Exception{
-        // gleiche Listen Ab und Speichere Ergebnisse
+        //gleiche Listen Ab und Speichere Ergebnisse
         //assumption: all entries are valid and singular, no duplicate entries; notation is consistent
         ArrayList<String> a1 = new ArrayList<String>(liste1.length);
         for(String a : liste1) a1.add(a);
